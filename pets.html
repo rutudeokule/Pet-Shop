@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<title>Pets</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<style>
+		body, html {
+ 			 height: 100%;
+  			font-family: "Inconsolata", sans-serif;
+		}
+
+		.bgimg {
+  			background-position: center;
+  			background-size: cover;
+  			background-image: url("background.jpg");
+  			min-height: 75%;
+		}
+
+		.menu {
+ 			 display: none;
+		}
+	</style>
+	<body>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PETS CATEGORIES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Category1');" id="myLink">
+        <div class="w3-col s6 tablink">Category 1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Category2');">
+        <div class="w3-col s6 tablink">Category 2</div>
+      </a>
+	<a href="javascript:void(0)" onclick="openMenu(event, 'Category3');">
+        <div class="w3-col s6 tablink">Category 3</div>
+      </a>
+    </div>
+
+    <div id="Category1" class="w3-container menu w3-padding-48 w3-card">
+	<h5> Cats name with descriptions </h5>
+      <h3>Persian Cat</h3>
+      <p class="w3-text-grey">Persian Cat Breed Description: Long haired breed of cat that has a short round face with a wide head. It has a thick coat , large eyes and a shortened muzzle.
+	<br> Average Lifespan: 12-17 Years</p><br>
+    
+      <h3>Scottish Fold</h3>
+      <p class="w3-text-grey">Breed Description: It is a medium sized cat weighing 4-6 kg. The coat can be long-haired or short-haired and ears can be normal or folded.
+	<br> Average Lifespan: 11- 15 years</p><br>
+    
+      <h3>American Bobtail</h3>
+      <p class="w3-text-grey">Breed Description: These have a short to medium built body with short tails. Hips are as wide as chest. Ears are medium sized and eyes are almond shaped.
+		<br> Average Lifespan: 11- 15 Years</p><br>
+    
+      <h3>Maine Coon</h3>
+      <p class="w3-text-grey">Breed Description: These are the largest breeds of domestic cats with soft and silky coat. They are easy to train and are a loyal breed.
+		<br> Average Lifespan: 12- 15 Years</p><br>
+    
+      <h3>Tabby Cat</h3>
+      <p class="w3-text-grey">Breed Description: It is a domestic cat that has a shape of M on its forehead formed by the combination of stripes and patterns present on its coat.
+		<br> Average Lifespan: 15- 20 years</p>
+    </div>
+
+    <div id="Category2" class="w3-container menu w3-padding-48 w3-card">
+	<h5> Dogs name with description </h5>
+      <h3>Akita</h3>
+      <p class="w3-text-grey">The Akita is distinctive large and powerful dog with an aloof attitude. <br> The average lifespan of an Akita is 11 to 15 years. </p><br>
+    
+      <h3>Basset Hound</h3>
+      <p class="w3-text-grey">The Basset Hound is a medium-sized domesticated dog with short, muscular legs and a pair of long drooping ears. Basset Hounds are very long in the body. In fact, they are longer than they are tall and their legs have the thickest bones of any dog of this size.
+	<br> Lifespan: 11-12 years </p><br>
+    
+      <h3>Beagle</h3>
+      <p class="w3-text-grey">The Beagle is member of the hound group of domesticated dogs and its ancestry can be dated back 2,500 years. Similar in appearance to the Foxhound, the Beagle also has a very advanced sense of smell and were employed to track game like rabbits and deer. These days they are often employed by security and police forces to sniff out contraband and serve all over the world in this role.
+	<br> Lifespan: 12-15 years </p><br>
+    
+      <h3>British Bulldog</h3>
+      <p class="w3-text-grey">The English Bulldog has fast become a popular family pet and their gentle but protective nature means that they are very personable and loyal family members. The breed requires a great deal of human contact and will show high levels of affection to their owners. If provoked or threatened by a stranger, the English Bulldog will bravely stand its ground and protect loved ones with determination.
+	<br> Lifespan: 7-10 years</p><br>
+    
+      <h3>Havanese</h3>
+      <p class="w3-text-grey">The Havanese is a small toy breed of domesticated dog. It has a thick coat of either long and straight or curly fur, ears that droop to the side of its face, and a great deal of personality. 
+	<br> Lifespan: 12-15 years </p>
+    </div>  
+
+	<div id="Category3" class="w3-container menu w3-padding-48 w3-card">
+	<h5> Birds name with description </h5>
+      <h3>Cuckoos</h3>
+      <p class="w3-text-grey">Brood parasitism involves the cuckoo laying its egg in the nest of another bird. The owners of the nest bring the cuckoo chick up as one of their own, even after it has pushed the other chicks out of the nest. </p><br>
+    
+      <h3>Parrots</h3>
+      <p class="w3-text-grey">Parrots have strong, hooked beaks for breaking open seeds and nuts. The outer two toes of each foot face backwards, while the inner two toes face forwards. This is known as a ‘zygodactyl’ arrangement, and is found in other primarily tree-dwelling birds such as toucans and woodpeckers. </p><br>
+    
+      <h3>Beagle</h3>
+      <p class="w3-text-grey">The Beagle is member of the hound group of domesticated dogs and its ancestry can be dated back 2,500 years. Similar in appearance to the Foxhound, the Beagle also has a very advanced sense of smell and were employed to track game like rabbits and deer. These days they are often employed by security and police forces to sniff out contraband and serve all over the world in this role.
+	<br> Lifespan: 12-15 years </p><br>
+    
+      <h3>Columbidae</h3>
+      <p class="w3-text-grey">Columbidae is a bird family containing the pigeons and doves. It is the only family in the order Columbiformes</p><br>
+   
+    </div>
+    <img src="cat_dog.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

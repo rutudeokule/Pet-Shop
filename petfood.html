@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<title>Pets</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<style>
+		body, html {
+ 			 height: 100%;
+  			font-family: "Inconsolata", sans-serif;
+		}
+
+		.bgimg {
+  			background-position: center;
+  			background-size: cover;
+  			background-image: url("background.jpg");
+  			min-height: 75%;
+		}
+
+		.menu {
+ 			 display: none;
+		}
+	</style>
+	<body>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PETS FOOD</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'FoodCategory1');" id="myLink">
+        <div class="w3-col s6 tablink">Food Category 1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'FoodCategory2');">
+        <div class="w3-col s6 tablink">Food Category 2</div>
+      </a>
+    </div>
+
+    <div id="FoodCategory1" class="w3-container menu w3-padding-48 w3-card">
+
+      <h5>Cats Food</h5>
+	<h3>Salmon</h3>
+      <p class="w3-text-grey">A good source of protein and omega-3 fatty acids, salmon can be a delicious and tasty treat for cats</p><br>
+    
+      <h3>Eggs</h3>
+      <p class="w3-text-grey">In order to reduce the risk of food borne diseases, be sure to cook any eggs you feed your cat. Eggs also can be found in many cat foods, such as Tiki Cat Koolina Luau chicken with egg in chicken consomme grain-free canned cat food.</p><br>
+    
+      <h3>Chicken</h3>
+      <p class="w3-text-grey">A good source of lean protein, chicken can be a great choice for your cat, as long as it is cooked thoroughly and the skin, which can be fatty, is removed before feeding it to your cat.</p><br>
+    
+      <h3>Cheese</h3>
+      <p class="w3-text-grey">If your cat shows an interest in this feline-friendly food, Wismer recommends feeding her a hard cheese, like cheddar, Swiss or Gouda. These cheeses are high in calcium and protein and can be easily baked into treats or fed to your cat raw in small amounts.</p><br>
+    
+      <h3>Nulo Dry Cat Food</h3>
+      <p class="w3-text-grey">Small kibble size so easier to chew</p>
+    </div>
+
+    <div id="FoodCategory2" class="w3-container menu w3-padding-48 w3-card">
+	<h5>Dogs Food</h5>
+      <h3>The Farmers Dog Pet Food </h3>
+      <p class="w3-text-grey">The Farmer’s Dog Pet Food contains all natural ingredients that are high in protein. Tasty recipes come in three different flavor: beef, turkey and pork. Other ingredients include parsnips, carrots, broccoli, sweet potatoes, and spinach, sunflower seeds and fish oil, which helps keep your puppy’s coat healthy and shiny.</p><br>
+    
+      <h3>Organix Organic Puppy Recipe</h3>
+      <p class="w3-text-grey">Born from a promise of the highest quality ingredients, Organix Organic Puppy Recipe offers organic dry kibble with absolutely no corn, soy, or wheat products. What you also won’t find: antibiotics, growth hormones, artificial preservatives, chemical pesticides, or synthetic fertilizers. </p><br>
+    
+      <h3> IAMS Proactive Health Dry Puppy Food </h3>
+      <p class="w3-text-grey">Puppies from 1- to 12-months-old have very specific, very special nutritional needs, and IAMS Proactive Health Dry Puppy Food has created a food just for them. Every bag is packed full of just the right balance of real ingredients, to nurture your pup’s developing muscles, brain, eyes, and coat. You’ll love that there are no fillers, wheat, soy, or artificial dyes or preservatives; IAMS is all real chicken, fatty acids, vitamins, and minerals. </p><br>
+    </div>  
+
+	    <img src="cat_dog.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

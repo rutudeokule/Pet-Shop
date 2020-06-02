@@ -1,0 +1,59 @@
+body
+{
+
+	background: url("background.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed; 
+ 	background-size: 100% 100%;
+
+	
+	font-family: Arial;
+	color: white;
+}
+
+*
+{
+	margine: 0px;
+	padding: 0px;
+}
+
+#menu ul
+{
+	list-style: none;
+	
+} 
+
+#menu ul li
+{
+	border: 1px solid white;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: right;
+	position: relative;
+
+}
+
+#menu ul li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+#menu ul li a:hover
+{
+	background-color: green;
+}
+
+#menu ul ul
+{
+	position: absolute;
+	display: none;
+}
+
+#menu ul li:hover> ul
+{
+	display: block;
+}
